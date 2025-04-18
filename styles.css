@@ -1,32 +1,78 @@
-body{
-    position: relative;
-    background-color: black;
-    color: white;
-    font-family: Georgia;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+body {
+  position: relative;
+  background-color: black;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+select {
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+button {
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 12px;
+  font-size: 15px;
 }
 
 title {
-    font-size: 80px;
-    margin-top: 50px;
+  font-size: 80px;
+  margin-top: 50px;
 }
 
 h1 {
-    font-size: 40px;
-    margin-top: 40px;
-  }
-
-.Graph{
-    margin-top: 80px;
-    background-color: darkslategray;
-  }
-
-#clearGraph{
-  cursor: pointer;
+  font-size: 40px;
+  margin-top: 40px;
 }
 
-#widgetDropdown{
-  cursor: pointer;
+#graphCanvas {
+  width: 80%;
+  height: 650px;
+  border: 2px solid slategray;
+  background-color: gray;
+  margin: 10px auto;
+}
+
+#widgetContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.widget {
+  background-color: #6a7272;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  border-color: aliceblue;
+  border-width: 7px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#GraphContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#clearGraphButton {
+  align-self: center;
+  padding: 12px 24px;
+  font-size: 18px;
+}
+
+.widget:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.3);
 }

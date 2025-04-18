@@ -2,18 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <title>Commodity Prices $$$</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
-    <h1>Commodity Prices</h1>
-    <h2>Add a Widget:</h1>
-    <select id="widgetDropdown">
-    </select>
-
-
-    <div class="Graph">
-        <button type="button" id="clearGraph">Clear Graph</button>
+    <div class="container">
+      <h1>Commodity Prices $$$</h1>
+      <h3>Add a widget:</h3>
+      <select id="widgetDropdown"></select>
+      <div id="widgetContainer"></div>
+      <div id="GraphContainer">
+        <h2>Graph:</h2>
+        <canvas id="graphCanvas"></canvas>
+        <button type="button" id="clearGraphButton">Clear Graph</button>
+      </div>
     </div>
   </body>
 </html>
